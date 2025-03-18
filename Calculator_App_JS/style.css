@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: #33ffd8;
+    --dark-color: #3a4452;
+    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+body {
+    background-color: #FFDEE9;
+    background-image: linear-gradient(-135deg, #FFDEE9 0%, #B5FFFC 100%);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.app {
+    width: 100%;
+    max-width: 350px;
+    padding: 50px 20px;
+    background-color: var(--dark-color);
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+}
+.app form {
+    background-color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 20px;
+}
+.app form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.app form div input {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    color: white;
+    background-color: transparent;
+    box-shadow: rgba(149, 157, 165, 0.2) -5px -5px 10px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    font-size: 25px;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.app form div input#display {
+    flex: 1;
+    height: 100px;
+    margin-bottom: 20px;
+    text-align: right;
+    padding: 20px;
+    font-size: 35px;
+    box-shadow: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.app form div input#calc {
+    flex: 1;
+}
+.app form div input:not(#display):hover {
+    color: var(--main-color);
+}
+.app form div input.operator {
+    color: var(--main-color);
+}
