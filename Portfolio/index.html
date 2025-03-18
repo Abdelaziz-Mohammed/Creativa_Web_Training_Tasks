@@ -27,7 +27,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="#home">Home</a>
+                            <a href="#hero">Home</a>
                         </li>
                         <li>
                             <a href="#about">About me</a>
@@ -36,7 +36,7 @@
                             <a href="#projects">Projects</a>
                         </li>
                         <li>
-                            <a href="#contacts">Contact</a>
+                            <a href="#contact">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -45,10 +45,11 @@
     <!-- end header -->
 
     <!-- start hero -->
-    <section id="hero" class="hero">
-        <div class="container d-flex align-items-center justify-content-between gap-5" style="background-color: var(--secondary-color);">
+    <section id="hero" class="hero position-relative"
+    style="background-color: var(--secondary-color);">
+        <div class="container d-flex align-items-end justify-content-between gap-5">
             <!-- left side -->
-            <div class="d-flex flex-column gap-3">
+            <div class="d-flex flex-column gap-3" style="width: 50%; margin-bottom: 120px;">
                 <h1>
                     Hello, I&apos;m
                     <br>
@@ -59,26 +60,108 @@
                     I create seamless web experiences for end-users.
                 </p>
                 <div class="d-flex gap-5">
-                    <button class="text-white text-md-center rounded py-1 px-5"
+                    <button class="text-white text-md-center rounded py-1 px-4"
                         style="background-color: var(--primary-color); outline: none; height: 40px; border: 2px solid var(--primary-color);">
                         About me
-                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-user ps-2"></i>
                     </button>
-                    <button class="text-white bg-transparent text-md-center rounded py-1 px-5"
+                    <button class="text-white bg-transparent text-md-center rounded py-1 px-4"
                         style="outline: none; height: 40px; border: 2px solid var(--primary-color);">
                         Projects
+                        <i class="fa-solid fa-eye ps-2"></i>
                     </button>
                 </div>
             </div>
             <!-- right side  -->
-            <div>
-
+            <div style="width: 50%;" class="d-flex justify-content-center">
+                <div class="" style="background-color: var(--primary-color); width: 300px; height: 300px; border-radius: 50%; position: relative;">
+                    <img src="images/me.png" alt="me-img" style="position: absolute; top: -35%; left: 50%; transform: translate(-50%, 0%);">
+                </div>
+            </div>
+            <!-- bottom color -->
+            <div class="position-absolute bottom-0 end-0 w-100" style="background-color: var(--primary-bg); height: 80px;">
+                <!--  -->
             </div>
         </div>
     </section>
     <!-- end hero -->
 
+    <!-- start about -->
+    <section id="about" class="about py-5"
+        style="background-color: var(--secondary-color);">
+        <div class="container d-flex flex-column gap-3">
+            <div class="d-flex flex-column gap-2 align-items-start justify-content-start">
+                <h2 class="text-center" style="color: var(--primary-color);">About me</h2>
+                <p>
+                    Hi, my name is Jayjay Dinero Dinero, i am a Fullstack web developer, UI designer, and Mobile developer.
+                    I jhave honed my skills in Web Development and advance i have core understanding of advance UI design principles.
+                    Here are the major skiills i have. 
+                </p>
+            </div>
+            <div class="d-flex gap-3 align-items-center justify-content-start">
+                <span style="font-size: 50px; color: var(--primary-color); font-weight: 800;">5+</span>
+                <p class="text-white m-0">
+                    Years of experience. Specialised in building apps,
+                    while ensuring a seamless <br> web experience for end users.
+                </p>
+            </div>
+            <div class="d-flex gap-3">
+                <div class="text-white d-flex flex-column align-items-start justify-content-end gap-4 p-3" style="width: 160px; height: 160px; background-color: var(--primary-color);">
+                    <i class="fa-solid fa-pencil" style="font-size: 30px;"></i>
+                    <span class="text-uppercase">
+                        UI & UX<br>Designing
+                    </span>
+                </div>
+                <div class="text-white d-flex flex-column align-items-start justify-content-end gap-4 p-3" style="width: 160px; height: 160px; background-color: var(--gray-bg);">
+                    <i class="fa-solid fa-code" style="font-size: 30px;"></i>
+                    <span class="text-uppercase">
+                        Web<br>Development
+                    </span>
+                </div>
+                <div class="text-white d-flex flex-column align-items-start justify-content-end gap-4 p-3" style="width: 160px; height: 160px; background-color: var(--gray-bg);">
+                    <i class="fa-solid fa-mobile-screen" style="font-size: 30px;"></i>
+                    <span class="text-uppercase">
+                        Mobile<br>Development
+                    </span>
+                </div>
+                <div class="text-white d-flex flex-column align-items-start justify-content-end gap-4 p-3" style="width: 160px; height: 160px; background-color: var(--gray-bg);">
+                    <i class="fa-solid fa-terminal" style="font-size: 30px;"></i>
+                    <span class="text-uppercase">
+                        Web Scrapping<br>With Python
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+
+    <!-- start services -->
+    <section id="services" class="services py-5"
+        style="background-color: var(--secondary-color);">
+        <div class="container">
+            <h2 class="text-start" style="color: var(--primary-color);">The services i offer:</h2>
+            <div class="d-flex flex-wrap gap-3">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <!-- end services -->
+
     <!-- start -->
+
+    <!-- end -->
+
+    <!-- start -->
+
+    <!-- end -->
+
+    <!-- start -->
+
     <!-- end -->
 
     <!-- Bootstrap JS -->

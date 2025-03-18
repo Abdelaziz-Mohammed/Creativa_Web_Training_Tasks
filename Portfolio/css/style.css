@@ -19,6 +19,7 @@ html {
     --primary-bg: #1A1A29;
     /* gray color */
     --gray-bg: #BDBDBD;
+    scroll-behavior: smooth;
 }
 body {
     font-family: "Poppins", sans-serif;
